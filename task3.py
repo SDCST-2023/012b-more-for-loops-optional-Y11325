@@ -22,12 +22,12 @@ for i in range(3):
         print("\nThe username or password you have entered does not exist!")
         continue
     elif names in users and pw in passwords:
-        int(users.index(names))
-        int(passwords.index(pw))
-        if names == pw:
+        x = int(users.index(names))
+        y = int(passwords.index(pw))
+        if x == y:
             print("\nAccess Granted!\n\n")
             break
-        elif names != pw:
+        elif x != y:
             print("\nWrong username or password!")
             if guesses == 3:
                 print("\nAccess Denied\nYOUR ACCOUNT IS LOCKED\n\n")
